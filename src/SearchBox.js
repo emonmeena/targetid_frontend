@@ -20,7 +20,7 @@ const SearchBox = () => {
 
   const fetchData = async () => {
     const response = await axios.get(
-      "http://emonmeena23.pythonanywhere.com/api/get_all_disease/" + query
+      "https://emonmeena23.pythonanywhere.com/api/get_all_disease/" + query
     );
     let array =[]
     setData(response.data);
